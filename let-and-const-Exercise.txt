@@ -5,3 +5,16 @@ PI = 42; // stop me from doing this!
 /* Write an ES2015 Version */
 const PI = 3.14;
 PI = 42; // stop me from doing this!
+
+
+- What is the difference between var and let?
+    let was introduced in ES2015. Compared to var it cannot be redeclared and is block scoped instead of function scoped.
+
+- What is the difference between var and const?
+    The value of var can be changed, but the value or reference of const cannot. A var can be declared before it is initialized but a const needs to be initialized when it is declared. A var is function scoped but const is block scoped.
+
+- What is the difference between let and const?
+    The value of let can be changed after it is initialized, the value or referenceof a const cannot be changed.
+
+- What is hoisting?
+    Hoisting is only a problem with var. Because the compiler declares variables created with var before initialization it is possible to reference the variable with an undefined value. This is not a problem with let and const.
